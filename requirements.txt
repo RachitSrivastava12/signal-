@@ -1,5 +1,6 @@
-confluent_kafka
+fastapi
+uvicorn
+defaultdict
+requests
+confluent-kafka
 bitquery-pb2-kafka-package
-base58
-protobuf
-websockets

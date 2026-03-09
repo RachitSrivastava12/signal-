@@ -1,0 +1,15 @@
+services:
+
+  - type: web
+    name: solana-alpha-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    plan: free
+
+  - type: worker
+    name: solana-alpha-engine
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python alpha_engine.py
+    plan: free
