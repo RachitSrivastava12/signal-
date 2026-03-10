@@ -1,6 +1,5 @@
 fastapi
 uvicorn
-defaultdict
 requests
 confluent-kafka
 bitquery-pb2-kafka-package
